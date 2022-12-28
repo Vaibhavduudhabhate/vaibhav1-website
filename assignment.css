@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar starts */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.logo {
+    margin: 0;
+    height: 25px;
+    border-radius: 12px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        /* top: 0; */
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* navbar ends*/
+.bgImg {
+    background-image: url("libby\ peterson.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 800px;
+}
+
+.name {
+    height: 20px;
+    float: right;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.wrapper h1 {
+    padding-top: 70px;
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+    font-size: 50px;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.hhh {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+.nnn {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 85px;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    font-weight: lighter;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+.wrap {
+    display: flex;
+    padding-top: 200px;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    }
+
+.photography {
+    height: 300px;
+    width: 350px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.multimedia {
+    height: 300px;
+    width: 350px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+}
+
+.writing {
+    height: 300px;
+    width: 350px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.photography {
+    position: relative;
+    animation-name: ex;
+    animation-duration: 8s;
+}
+
+@keyframes ex {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.multimedia {
+    position: relative;
+    animation-name: ex;
+    animation-duration: 8s;
+}
+
+@keyframes ex {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.writing {
+    position: relative;
+    animation-name: ex;
+    animation-duration: 8s;
+}
+
+@keyframes ex {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width:1100px) {
+    .wrapper{
+        height: 150vw;
+    }
+}
+@media (max-width: 768px) {
+    .wrap {
+        flex-direction: column;
+        /* text-align: center; */
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .wrapper{
+        height: 300vw;
+    }
+}
+@media (max-width:600px) {
+
+    .wrapper{
+        height: 350vw;
+    }
+}
+@media (max-width:550px) {
+    .wrapper{
+        height: 400vw;
+    }
+}
+/* first container ends */
+
+/* second container starts */
+
+.the {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.new {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.secondWrapper {
+    background-color: rgb(247, 242, 242);
+    height: 800px;
+}
+
+.cards {
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    width: 350px;
+    object-fit: contain;
+}
+
+.ii {
+    width: 100%;
+    border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 1;
+    transition: 0.3s;
+}
+.ii:hover {
+    transform: scale(1.02); 
+    opacity: 0.6;
+}
+
+.flex1 {
+    padding-top: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex2 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 768px) {
+    .flex1 {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    .secondWrapper{
+        height: 1500px;
+    }
+}
+@media (max-width: 768px) {
+    .flex2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }    
+}
+
+/* .secondWrapper{
+    position: relative;
+    animation-name: vv;
+    animation-duration: 10s;
+} */
+    /* @keyframes vv {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    } */
+
+/* second container ends  */
+/* third container starts  */
+.thirdWrapper {
+    background-color: rgb(223, 220, 220);
+    height: 1000px;
+}
+.flex3 {
+    padding-top: 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 768px) {
+    .flex3 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }    
+    .thirdWrapper{
+        height: 2100px;
+    }
+    .textarea1{
+        margin: 10px;
+    }
+    #seventh{
+        margin: 10px;
+    }
+    #eighth{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+    #nineth{
+        margin-left: 10px;
+    }
+    #tenth{
+        margin: 10px;
+    }
+    #eleventh{
+        margin-bottom: 30px;
+        /* margin-right: 20px; */
+        margin-left: 10px;
+    }
+    #twelveth{
+        margin: 10px;
+    } 
+}
+.textarea1 {
+    font-size: 12px;
+    padding: 15px;
+    margin: 20px;
+    border-top: 3px solid;
+    background-color: white;
+    font-family: avenir-lt-w01_35-light1475496,sans-serif;
+    height: 125px;
+    width: 300px;
+}
+.textarea2{
+    padding: 15px;
+    margin: 20px;
+    font-size: 12px;
+    height: 125px;
+    border-top: 3px solid;
+    font-family: avenir-lt-w01_35-light1475496,sans-serif;
+    width: 300px;
+    background-color: white;
+}
+.flex4{
+    margin: 100px;
+}
+/* third container ends  */
+.fourthWrapper{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+.copyright{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
